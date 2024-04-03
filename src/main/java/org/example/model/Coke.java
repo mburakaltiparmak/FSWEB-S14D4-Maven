@@ -7,9 +7,12 @@ public class Coke extends ProductForSale {
         super(type, price, description);
         this.brand = brand;
     }
+    public Coke(String type,int price,String description){
+        super(type, price, description);
+    }
 
     @Override
-    void showDetails() {
+    public void showDetails() {
         System.out.println(brand);
     }
 }

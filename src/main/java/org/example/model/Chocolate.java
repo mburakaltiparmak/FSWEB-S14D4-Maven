@@ -7,9 +7,12 @@ public class Chocolate extends ProductForSale{
         super(type, price, description);
         this.chocolateType = chocolateType;
     }
+    public Chocolate(String type,int price,String description){
+        super(type, price, description);
+    }
 
     @Override
-    void showDetails() {
+   public void showDetails() {
         System.out.println(chocolateType);
     }
 

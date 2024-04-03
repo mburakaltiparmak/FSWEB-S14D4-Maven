@@ -5,16 +5,15 @@ public class Bread extends ProductForSale {
 
     public Bread(String type, int price, String description, String flourType) {
         super(type, price, description);
-
-    }
-
-    public Bread(String flourType) {
-        super();
         this.flourType = flourType;
     }
 
+    public Bread(String type,int price,String description) {
+        super(type, price, description);
+    }
+
     @Override
-    void showDetails() {
+    public void showDetails() {
         System.out.println(flourType);
     }
 }
